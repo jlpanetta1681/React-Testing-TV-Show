@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import Episodes from './Episodes';
-
-const episodesFixture = [
+// import { episodesFixture } from "../fixtures/data"
+export const episodesFixture = [
 	{
 		id: 'fakeid',
 		image: {
