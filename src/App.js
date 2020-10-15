@@ -43,6 +43,7 @@ export default function App() {
 				placeholder="Select an option"
 			/>
 			<Episodes episodes={episodes} />
-		</div>
+		</div>	
 	);
+	
 }
