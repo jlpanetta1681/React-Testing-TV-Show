@@ -13,11 +13,10 @@ export default function App() {
 	const episodes = seasons[selectedSeason] || [];
 
 	useEffect(() => {
-		fetchShow()
-		.then(res => {
-			setShow(res.data)
+		fetchShow().then((res) => {
+			setShow(res.data);
 			setSeasons(formatSeasons(res.data._embedded.episodes));
-		})
+		});
 	}, []);
 
 	const handleSelect = (e) => {
@@ -42,8 +41,8 @@ export default function App() {
 				value={selectedSeason || 'Select a season'}
 				placeholder="Select an option"
 			/>
+			<h3>Created By Joe Panetta 2020</h3>
 			<Episodes episodes={episodes} />
-		</div>	
+		</div>
 	);
-	
 }
