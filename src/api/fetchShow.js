@@ -1,16 +1,14 @@
 import axios from 'axios';
 
-export const fetchShow = () => {
-	return  axios
-		.get(
+export const fetchShow = async () => {
+	try {
+		const res = await axios.get(
 			'https://api.tvmaze.com/singlesearch/shows?q=stranger-things&embed=episodes'
-		)
-		.then((res) => {
-			console.log('SV: fetchShow.js: fetchShow: response', res);
-			return res.data;
-		})
-		.catch((err) => {
-			console.log('SV: fetchShow.js: fetchShow: error', err.message);
-			return err;
-    	});
-	 };
+		);
+		console.log(res);
+		return res;
+	} catch (err) {
+		console.log('error fetchikng data');
+		return err;
+	}
+};

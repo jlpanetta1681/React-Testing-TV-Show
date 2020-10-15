@@ -4,12 +4,12 @@ import { render, fireEvent, wait } from '@testing-library/react';
 import { fetchShow as mockFetchShow } from './api/fetchShow';
 import App from './App';
 
-jest.mock('./api/fetchShow');
-console.log('kh: App.test.js: mockFetchShow', mockFetchShow);
+// jest.mock('./api/fetchShow');
+// console.log('kh: App.test.js: mockFetchShow', mockFetchShow);
 
-test('App renders', () => {
-	render(<App />);
-});
+// test('App renders', () => {
+// 	render(<App />);
+// });
 
 test('App fetches show data and renders the data', async () => {
 	mockFetchShow.mockResolvedValueOnce(mockFetchShow);
