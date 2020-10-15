@@ -8,7 +8,7 @@ export const fetchShow = async () => {
 		console.log(res);
 		return res;
 	} catch (err) {
-		console.log('error fetchikng data');
+		console.log('error fetching data');
 		return err;
 	}
 };

@@ -41,6 +41,7 @@ export default function App() {
 				value={selectedSeason || 'Select a season'}
 				placeholder="Select an option"
 			/>
+			{'Created By Joe Panetta'}
 			<h3>Created By Joe Panetta 2020</h3>
 			<Episodes episodes={episodes} />
 		</div>
